@@ -1,0 +1,5 @@
+ python3 ollama_classify_python.py \               
+  /Users/haylin_mac/Desktop/CISCOSKILLS/data/ppgdpr_experiments/outputs/all_records.json \
+  /Users/haylin_mac/Desktop/CISCOSKILLS/data/ppgdpr_experiments/outputs/all_records_qwen15b.json \
+  --model qwen2.5:1.5b \
+  --limit 0
