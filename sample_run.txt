@@ -1,9 +1,25 @@
 #General tsv to json conversion
 python3 core/tsv_to_json.py \
-  --dataset-path /Users/haylin_mac/Desktop/Lab1/PPGDPR_Classifier/PPGDPR/data/data.tsv \
+  --dataset-path [local dataset path] \
   --start-index 0 \
   --num_records 0 \
-  --output-path /Users/haylin_mac/Desktop/Lab1/PPGDPR_Classifier/data/all_records.json
-Wrote 36610 records to /Users/haylin_mac/Desktop/Lab1/PPGDPR_Classifier/data/all_records.json
+  --output-path [local output path]
+Wrote 36610 records to [local dataset path]
 
-#
+# Conversion with Embedding 
+Terminal 1: ollama serve
+Terminal 2: ollama pull _____
+Terminal 2: run
+ python3 core/tsv_to_jsonembds.py --dataset-path [local dataset path] --num_records 5 --output-path [local output path] --embedding-model embeddinggemma
+
+ #Pipeline:
+1-convert tsv to json
+2-histogram of classes
+3-histogram of sentence length for each class
+4-slice dataset to a proportional subset
+6-histogram of classes
+7-histogram of sentence length for each class
+8-training script for SVM
+9-training script for LogReg
+10-training script for NN
+11-Ollama script for 2 models
