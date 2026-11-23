@@ -1,5 +1,9 @@
- python3 ollama_classify_python.py \               
-  /Users/haylin_mac/Desktop/CISCOSKILLS/data/ppgdpr_experiments/outputs/all_records.json \
-  /Users/haylin_mac/Desktop/CISCOSKILLS/data/ppgdpr_experiments/outputs/all_records_qwen15b.json \
-  --model qwen2.5:1.5b \
-  --limit 0
+#General tsv to json conversion
+python3 core/tsv_to_json.py \
+  --dataset-path /Users/haylin_mac/Desktop/Lab1/PPGDPR_Classifier/PPGDPR/data/data.tsv \
+  --start-index 0 \
+  --num_records 0 \
+  --output-path /Users/haylin_mac/Desktop/Lab1/PPGDPR_Classifier/data/all_records.json
+Wrote 36610 records to /Users/haylin_mac/Desktop/Lab1/PPGDPR_Classifier/data/all_records.json
+
+#
