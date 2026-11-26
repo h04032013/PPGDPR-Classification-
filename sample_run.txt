@@ -23,3 +23,6 @@ Terminal 2: run
 9-training script for LogReg
 10-training script for NN
 11-Ollama script for 2 models
+
+# Conversion with Embedding 
+python /Users/haylin_mac/Desktop/Lab1/PPGDPR_Classifier/analysis/initial_data_plot.py --input-path /Users/haylin_mac/Desktop/Lab1/PPGDPR_Classifier/data/json_data/all_records.json --output-dir /Users/haylin_mac/Desktop/Lab1/PPGDPR_Classifier/data/figures_plots
